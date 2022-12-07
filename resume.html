@@ -19,14 +19,16 @@
     <link href="/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
 </head>
 
 <body>
     <div class="container mx-auto my-5">
-        <div class="grid grid-cols-8 gap-4">
-            <div class="col-span-8 sm:col-span-3 lg:col-span-2">
-                <h1 class="text-5xl"><span>Jacob Mayhew</span></h1>   
+        <h1 class="text-center"><span>Jacob Mayhew</span></h1>
+        <div class="row">
+            <div class="col-3">
+                <h2 class="mt-3"><span>Contact</span></h2>
                 <address>
                     <a href="mailto:mayhew.michael.j@gmail.com"><i
                             class="fa-solid fa-envelope mr-2"></i>mayhew.michael.j@gmail.com
@@ -44,7 +46,7 @@
                 <p>One of my favorite authors is Jorge Luis Borges. I enjoy listening to history podcasts and lecture
                     series.</p>
                 <h2><span>Things I Love</span></h2>
-                <ul class="flat-list">
+                <ul class="flat-list dotless">
                     <li>Linux</li>
                     <li>Open Source</li>
                     <li class="linked"><a href="https://projecteuler.net/" target="_blank">Project Euler</a></li>
@@ -55,7 +57,7 @@
                     <li>Uncertainty</li>
                 </ul>
                 <h2><span>Things I Use</span></h2>
-                <ul class="flat-list">
+                <ul class="flat-list dotless">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>Javascript</li>
@@ -68,20 +70,22 @@
                 <p>Western Governors University</p>
                 <p></p>
             </div>
-            <div class="col-span-8 md:col-span-5 lg:col-span-6">
-                <h2 class="text-4xl mt-3"><span>At A High Level</span></h2>
+            <div class="col-9">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="mt-3"><span>At A High Level</span></h2>
                 <div>
                     <p>A software engineer with 3 years of development experience.</p>
                 </div>
-                <h2 class="text-4xl"><span>Software</span></h2>
-                <h3 class="text-2xl">Icario (Jun 2021 - Nov 2022)</h3>
+                <h2><span>Software</span></h2>
+                <h3 class="">Icario (Jun 2021 - Nov 2022)</h3>
                 <div>
                     <p>Icario acquired ChipRewards in June of 2021. Icario is a healthcare technology company that
                         focuses
                         on gaps in care for CMS programs.</p>
                 </div>
-                <div class="pl-4">
-                    <h4 class="text-xl">Software Engineer</h4>
+                <div class="pl-3">
+                    <h4>Software Engineer</h4>
                     <div>
                         <p>Software Engineer on a Small team focused on the member portal</p>
                         <p>In this role I:</p>
@@ -97,7 +101,7 @@
                         </ul>
                     </div>
                 </div>
-                <h3 class="text-2xl">ChipRewards (Oct 2019 - Jun 2021)</h3>
+                <h3 class="">ChipRewards (Oct 2019 - Jun 2021)</h3>
                 <div>
                     <p>ChipRewards was a healthcare technology company that initially focused on incentive programs in
                         the
@@ -106,7 +110,7 @@
                         space.</p>
                 </div>
                 <div class="pl-4">
-                    <h4 class="text-xl">Junior Developer &amp; Frontend Developer</h4>
+                    <h4>Junior Developer &amp; Frontend Developer</h4>
                     <div>
                         <p>Worked on a small team that was focused on the ChipRewards member portal.The portal utilized
                             Elixir on the backend, React on
@@ -127,69 +131,79 @@
                         <p>Perhaps my biggest success was implementing a live chat for the customer service team.</p>
                     </div>
                 </div>
-                <h2 class="text-4xl mt-3"><span>Before Software (B.S.)</span></h2>
-                <div>
-                    <p>A bartender with 4 years of experience, a Certified (Specialty Coffee Association) Barista
-                        Trainer, and a Coffee Equipment repair specialist</p>
-                </div>
-                <h3 class="text-2xl">Rojo Birmingham (2015 - 2020)</h3>
-                <div class="pl-4">
-                    <h4 class="text-xl">Bartender</h4>
-                    <div>
-                        <p>Started as a food runner and became a key bartender</p>
-                        <p>At Rojo I:</p>
-                        <ul class="pl-3 list-disc">
-                            <li>Created deposits in the morning</li>
-                            <li>Set up the restaurant for open</li>
-                            <li>Assisted with ordering</li>
-                            <li>Managed the resturaunt when closing</li>
-                            <li>Spearheaded service recovery</li>
-                            <li>Mentored and trained new team members</li>
-                        </ul>
                     </div>
                 </div>
-                <h3 class="text-2xl">The Collins Bar(2018 - 2019)</h3>
-                <div class="pl-4">
-                    <h4 class="text-xl">Bartender, Barback, and Server</h4>
+                <div class="row">
+                    <h2 class="mt-3"><span>Before Software (B.S.)</span></h2>
                     <div>
-                        <p>Some of what I did was:</p>
-                        <ul class="pl-3 list-disc">
-                            <li>Crafting high-end classic and bespoke cocktails</li>
-                            <li>Recovering service</li>
-                            <li>Trying to actively inspire a mutually supportive atmosphere</li>
-                            <li>Mentoring and training new team members</li>
-                            <li>Maintaining stock during service</li>
-                        </ul>
+                        <p>A bartender with 4 years of experience, a Certified (Specialty Coffee Association) Barista
+                            Trainer, and a Coffee Equipment repair specialist</p>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="">Rojo Birmingham (2015 - 2020)</h3>
+                        <div class="pl-4">
+                            <h4>Bartender</h4>
+                            <div>
+                                <p>Started as a food runner and became a key bartender</p>
+                                <p>At Rojo I:</p>
+                                <ul class="pl-3 list-disc">
+                                    <li>Created deposits in the morning</li>
+                                    <li>Set up the restaurant for open</li>
+                                    <li>Assisted with ordering</li>
+                                    <li>Managed the resturaunt when closing</li>
+                                    <li>Spearheaded service recovery</li>
+                                    <li>Mentored and trained new team members</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3 class="">The Collins Bar(2018 - 2019)</h3>
+                        <div class="pl-4">
+                            <h4>Bartender, Barback, and Server</h4>
+                            <div>
+                                <p>Some of what I did was:</p>
+                                <ul class="pl-3 list-disc">
+                                    <li>Crafting high-end classic and bespoke cocktails</li>
+                                    <li>Recovering service</li>
+                                    <li>Trying to actively inspire a mutually supportive atmosphere</li>
+                                    <li>Mentoring and training new team members</li>
+                                    <li>Maintaining stock during service</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="">Revelator Coffee(2017 - 2018)</h3>
+                        <div class="pl-4">
+                            <h4>Barista and Bartender</h4>
+                            <div>
+                                <p>My obligations included:</p>
+                                <ul class="pl-3 list-disc">
+                                    <li>Crafting classic cocktails and coffee beverages</li>
+                                    <li>Quality controll</li>
+                                    <li>Assisting the beverage manager choose wine and spirits</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3 class="">O'Henry's Coffee Roasting Company(2013 - 2017)</h3>
+                        <div class="pl-4">
+                            <h4>Assistant Director of Training and Roasting(2015-2017)</h4>
+                            <div>
+                                <p>My functions were to:</p>
+                                <ul class="pl-3 list-disc">
+                                    <li>Create a new training program including materials</li>
+                                    <li>Implement aforementioned trainig program</li>
+                                    <li>Transition company from fax to G Suite</li>
+                                    <li>Maintain and install equipment</li>
+                                    <li>Roast Coffee</li>
+                                    <li>Perform quality controll at the roaster and randomly at the stores</li>
+                                </ul>
+                            </div>
+                            <h4>Barista(2013-2015)</h4>
+                        </div>
                     </div>
                 </div>
-                <h3 class="text-2xl">Revelator Coffee(2017 - 2018)</h3>
-                <div class="pl-4">
-                    <h4 class="text-xl">Barista and Bartender</h4>
-                    <div>
-                        <p>My obligations included:</p>
-                        <ul class="pl-3 list-disc">
-                            <li>Crafting classic cocktails and coffee beverages</li>
-                            <li>Quality controll</li>
-                            <li>Assisting the beverage manager choose wine and spirits</li>
-                        </ul>
-                    </div>
-                </div>
-                <h3 class="text-2xl">Ohenry's Coffee Roasting Company(2013 - 2017)</h3>
-                <div class="pl-4">
-                    <h4 class="text-xl">Assistant Director of Training and Roasting(2015-2017)</h4>
-                    <div>
-                        <p>My functions were to:</p>
-                        <ul class="pl-3 list-disc">
-                            <li>Create a new training program including materials</li>
-                            <li>Implement aforementioned trainig program</li>
-                            <li>Transition company from fax to G Suite</li>
-                            <li>Maintain and install equipment</li>
-                            <li>Roast Coffee</li>
-                            <li>Perform quality controll at the roaster and randomly at the stores</li>
-                        </ul>
-                    </div>
-                    <h4 class="text-xl">Barista(2013-2015)</h4>
-                </div>
+                
+                
             </div>
         </div>
     </div>
