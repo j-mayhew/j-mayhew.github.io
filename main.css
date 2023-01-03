@@ -28,9 +28,6 @@
     padding: 0.5rem 0 0.5rem 0.5rem;
   }
   
-  h3 + div {
-    margin: 0.2rem 0 0.2rem 1rem;
-  }
   
   h4 {
     font-weight: bold !important;
@@ -83,6 +80,10 @@
     color: #0000ff;
   }
 
+  .info-block{
+    margin: 0.2rem 0 0.2rem 1rem;
+  }
+
   .pl-3{
     padding-left: .75rem;
   }
@@ -100,6 +101,34 @@
   
     .grid div:first-child {
       border-right: 0px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    ul {
+      padding-left: 0 !important;
+    }
+
+    h3 {
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    h4 {
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    h4 + div {
+      margin-left: 0;
+    }
+
+    .info-block{
+      margin-left: 0;
+    }
+
+    .pl-3 {
+      padding-left: 0;
     }
   }
   
