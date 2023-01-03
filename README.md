@@ -1,1 +1,1 @@
-# Repository for personal Website
+Repository for resume
